@@ -3,11 +3,11 @@ class EventVariables:
         self._running = True
         self._container_coords = {}
         self._event_state = 0
-        self._states = {0:"main_menu",
-                       1:"highscore",
-                       2:"pause_menu",
-                       3:"game_over",
-                       4:"game"}
+        self._states = {0: "main_menu",
+                        1: "highscore",
+                        2: "pause_menu",
+                        3: "game_over",
+                        4: "game"}
         self._fonts = None
         self.event_objects = None
         self._menu_rectangles = None
@@ -37,22 +37,23 @@ class EventVariables:
         self._game_over = False
         self._pause = False
         self._line_completes = 0
+        self._color_scheme = 0
 
     def set_line_complete(self, lc):
         self._line_completes += lc
-    
+
     def get_line_complete(self):
         return self._line_completes
-    
+
     def set_pause(self, p):
         self._pause = p
-    
+
     def get_pause(self):
         return self._pause
 
     def get_game_over(self):
         return self._game_over
-    
+
     def set_game_over(self, gameover):
         self._game_over = gameover
 
@@ -97,10 +98,10 @@ class EventVariables:
 
     def get_game_grid_coords(self):
         return self._game_grid_coords
-    
+
     def get_prev_horiz_movement(self):
         return self._prev_horiz_mov
-    
+
     def set_prev_horiz_movement(self, secs):
         self._prev_horiz_mov = secs
 
@@ -112,13 +113,13 @@ class EventVariables:
 
     def get_left_pressed(self):
         return self._left_pressed
-    
+
     def set_right_pressed(self, r):
         self._right_pressed = r
 
     def get_right_pressed(self):
         return self._right_pressed
-    
+
     def set_level(self, level):
         self._level = level
 
@@ -127,7 +128,7 @@ class EventVariables:
 
     def set_prev_movement(self, prev):
         self._prev_movement = prev
-    
+
     def get_prev_movement(self):
         return self._prev_movement
 
@@ -142,7 +143,7 @@ class EventVariables:
 
     def get_movement_delay(self):
         return self._movement_delay
-    
+
     def get_fps(self):
         return self._fps
 
@@ -151,13 +152,13 @@ class EventVariables:
 
     def get_verticle_speed(self):
         return self._verticle_speed
-    
+
     def set_horizontal_speed(self, speed):
         self._horizontal_speed = speed
 
     def get_horizontal_speed(self):
         return self._horizontal_speed
-    
+
     def set_current_shape(self, shape):
         self._current_shape = shape
 
@@ -169,19 +170,19 @@ class EventVariables:
 
     def get_score(self):
         return self._score
-    
+
     def set_is_mouse_pressed(self, val: bool):
         self._is_mouse_pressed = val
-    
+
     def get_is_mouse_pressed(self):
         return self._is_mouse_pressed
 
     def set_running(self, value: bool):
-        self._running=value
+        self._running = value
 
     def get_running(self):
         return self._running
-    
+
     def set_fonts(self, fonts):
         self._fonts = fonts
 
@@ -190,7 +191,7 @@ class EventVariables:
 
     def get_all_fonts(self):
         return self._fonts
-    
+
     def set_container_coords(self, x, y, width, height):
         self._container_coords['cont_x'] = x
         self._container_coords['cont_y'] = y
@@ -199,36 +200,42 @@ class EventVariables:
 
     def get_container_coords(self):
         return self._container_coords
-    
+
     def set_event_state(self, event_state):
         self._event_state = event_state
 
     def get_event_state(self):
         return self._event_state
-    
+
     def get_all_event_states(self):
         return self._states
-    
+
     def set_event_objects(self, event_objects):
         self.event_objects = event_objects
-    
+
     def get_event_objects(self):
         return self.event_objects
-    
+
     def set_menu_rectangles(self, rectangles, state):
         self._menu_rectangles = {state: rectangles}
 
     def get_menu_rectangles(self):
         return self._menu_rectangles
-    
+
     def set_mouse_pos(self, mouse_pos):
         self._mouse_pos = mouse_pos
 
     def get_mouse_pos(self):
         return self._mouse_pos
-    
+
     def set_bag_of_7(self, bag_of_seven):
         self._bag_of_7 = bag_of_seven
 
     def get_bag_of_7(self):
         return self._bag_of_7
+
+    def set_color_scheme(self, scheme):
+        self._color_scheme = scheme
+
+    def get_color_scheme(self):
+        return self._color_scheme

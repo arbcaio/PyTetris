@@ -1,3 +1,5 @@
+# constants.py
+
 constants = {}
 constants['SCREEN_WIDTH'] = 1920
 constants['SCREEN_HEIGHT'] = 1080
@@ -13,15 +15,33 @@ constants['TITLE_SIZES'] = {"main_menu": 48, 'pause_menu': 24,
                             'game': 12}
 constants['TITLE_COLOR'] = (132, 237, 245)
 constants['TITLE_FONT'] = "assets/fonts/title_font.otf"
-constants['RANDOM_COLORS'] = [(92, 206, 255),
-                              (31, 47, 224),
-                              (224, 109, 247),
-                              (212, 38, 87)]
+
+constants['GREEN_BLUE'] = [(0, 255, 0), (0, 0, 255), (0, 0, 255), (0, 255, 0)]
+constants['GREEN_YELLOW'] = [(0, 255, 0), (255, 255, 0), (255, 255, 0), (0, 255, 0)]
+constants['GREEN_PURPLE'] = [(0, 255, 0), (128, 0, 128), (128, 0, 128), (0, 255, 0)]
+constants['GREEN_PINK'] = [(0, 255, 0), (255, 192, 203), (255, 192, 203), (0, 255, 0)]
+constants['BLUE_GREEN'] = [(0, 0, 255), (0, 255, 0), (0, 255, 0), (0, 0, 255)]
+constants['BLUE_YELLOW'] = [(0, 0, 255), (255, 255, 0), (255, 255, 0), (0, 0, 255)]
+constants['BLUE_PURPLE'] = [(0, 0, 255), (128, 0, 128), (128, 0, 128), (0, 0, 255)]
+constants['BLUE_RED'] = [(0, 0, 255), (255, 0, 0), (255, 0, 0), (0, 0, 255)]
+constants['BLUE_PINK'] = [(0, 0, 255), (255, 192, 203), (255, 192, 203), (0, 0, 255)]
+constants['YELLOW_PURPLE'] = [(255, 255, 0), (128, 0, 128), (128, 0, 128), (255, 255, 0)]
+constants['YELLOW_PINK'] = [(255, 255, 0), (255, 192, 203), (255, 192, 203), (255, 255, 0)]
+constants['YELLOW_RED'] = [(255, 255, 0), (255, 0, 0), (255, 0, 0), (255, 255, 0)]
+constants['YELLOW_ORANGE'] = [(255, 255, 0), (255, 165, 0), (255, 165, 0), (255, 255, 0)]
+constants['ORANGE_PINK'] = [(255, 165, 0), (255, 192, 203), (255, 192, 203), (255, 165, 0)]
+constants['ORANGE_PURPLE'] = [(255, 165, 0), (128, 0, 128), (128, 0, 128), (255, 165, 0)]
+constants['ORANGE_RED'] = [(255, 165, 0), (255, 0, 0), (255, 0, 0), (255, 165, 0)]
+constants['ORANGE_GRAY'] = [(255, 165, 0), (128, 128, 128), (128, 128, 128), (255, 165, 0)]
+constants['GRAY_RED'] = [(128, 128, 128), (255, 0, 0), (255, 0, 0), (128, 128, 128)]
+constants['GRAY_PURPLE'] = [(128, 128, 128), (128, 0, 128), (128, 0, 128), (128, 128, 128)]
+constants['GRAY_YELLOW'] = [(128, 128, 128), (255, 255, 0), (255, 255, 0), (128, 128, 128)]
+constants['GRAY_GREEN'] = [(128, 128, 128), (0, 255, 0), (0, 255, 0), (128, 128, 128)]
+
 constants['main_menu'] = "assets/screens/main_menu.json"
 constants['game'] = "assets/screens/game_screen.json"
 constants['game_over'] = "assets/screens/game_over.json"
-constants['menu_title_font'] = {"size": 32, "color": (
-    255, 255, 255), 'path': "assets/fonts/menu_items.ttf"}
+constants['menu_title_font'] = {"size": 32, "color": (255, 255, 255), 'path': "assets/fonts/menu_items.ttf"} 
 constants['text_font'] = {"size": 32, "color": (
     255, 255, 255), 'path': "assets/fonts/text_font.ttf"}
 constants['shapes'] = "assets/screens/shapes_rotations.json"
@@ -55,6 +75,3 @@ constants['scores_awarded'] = {1: {"lines": {1: "60",
                                              4: "1800"},
                                    'placed': 40,
                                    'placed_fast': 50}}
-
-# constants['main_menu'] = "assets/screens/main_menu.json"
-# constants['main_menu'] = "assets/screens/main_menu.json"

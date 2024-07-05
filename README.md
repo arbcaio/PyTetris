@@ -9,3 +9,8 @@ TODO:
   <li>Add different game modes</li>
   <li>add new and different shapes</li>
 </ul>
+
+--------------------------
+
+<p>Changed color properties and boundaries sizes for a uni project<p>
+<p>Use [1234567890wertyuio] keys to change color scheme of the game<p>

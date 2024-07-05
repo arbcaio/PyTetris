@@ -32,7 +32,7 @@ class GameRunner:
         title_font = self.event_variable.get_font("title",
                                                   self.event_variable.get_event_state())
         self.title = Title(font=title_font,
-                                    colors=constants['TITLE_COLOR'],
+                                    colors=constants['GRAY'],
                                     screen=self.screen,
                                     event_state=self.event_variable)
         self.screen_objects = LoadScreenState(constants, 
